@@ -5,3 +5,18 @@ Example
 For a = 2 and b = 7, the output should be
 solution(a, b) = 11.
 
+
+My solution
+
+func solution(a: Int, b: Int) -> Int {
+    var tally = 0
+    var x:String = ""
+    for i in a...b{
+        x = String(i, radix:2)
+        tally += x.filter{ $0 == "1"}.count 
+    }
+return tally  
+
+}
+
+
